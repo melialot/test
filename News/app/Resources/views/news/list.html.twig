@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Какие-то новости</h1>
+    {% for item in news%}
+    <div><h2>{{ item.title }}<h2></div>
+    <div>{{ item.text }}</div>
+    <div>{{ item.author }}</div>
+    <div>{{ item.date }}</div>
+    {% endfor %}
+{% endblock %}

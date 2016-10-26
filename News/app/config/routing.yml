@@ -1,0 +1,32 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+news_item:
+    path:     /item/{id}
+    defaults: { _controller: NewsBundle:News:item }
+
+news_list:
+    path:     /list
+    defaults: { _controller: NewsBundle:News:list }
+
+news_list_sort:
+    path:     /list/sort/{sort}
+    defaults: { _controller: NewsBundle:News:list } 
+
+news_list_page:
+    path:     /list/page/{page}
+    defaults: { _controller: NewsBundle:News:list } 
+
+news_list_page_pagesize:
+    path:     /list/page/{page}/pagesize/{pagesize}
+    defaults: { _controller: NewsBundle:News:list }
+
+news_list_page_sort:
+    path:     /list/page/{page}/sort/{sort}
+    defaults: { _controller: NewsBundle:News:list } 
+
+news_list_page_pagesize_sort:
+    path:     /list/page/{page}/pagesize/{pagesize}/sort/{sore}
+    defaults: { _controller: NewsBundle:News:list }
+    

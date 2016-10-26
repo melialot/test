@@ -1,0 +1,21 @@
+NewsBundle\Entity\News:
+    type: entity
+    table: news
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        title:
+            type: string
+            length: 100
+        anounce:
+            type: text
+        fulltext:
+            type: text
+        author:
+            type: string
+            length: 50
+        dateCreate:
+            type: date
+            column: date_create
